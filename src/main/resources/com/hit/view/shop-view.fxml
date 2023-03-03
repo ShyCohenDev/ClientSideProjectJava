@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1410.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hit.controller.ShopController">
+   <children>
+      <Button fx:id="shop_search" layoutX="251.0" layoutY="33.0" mnemonicParsing="false" onAction="#onSearchButtonClick" prefHeight="134.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="🔍" textFill="#868686">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Text fx:id="shop_total" layoutX="1098.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total: 0₪">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="shop_items" layoutX="77.0" layoutY="167.0" onMouseClicked="#onItemClick" prefHeight="570.0" prefWidth="666.0" />
+      <ListView fx:id="shop_cart" layoutX="813.0" layoutY="167.0" onMouseClicked="#onCartClick" prefHeight="570.0" prefWidth="271.0" />
+      <Text layoutX="813.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shopping Cart">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="shop_buy" layoutX="1084.0" layoutY="698.0" mnemonicParsing="false" onAction="#onBuyButtonClick" style="-fx-background-color: transparent;" text="Purchase">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="shop_text" layoutX="74.0" layoutY="81.0" promptText="Search for items">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>
